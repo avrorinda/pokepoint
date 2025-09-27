@@ -1,0 +1,12 @@
+image: klakegg/hugo:ext-alpine
+
+pages:
+  stage: deploy
+  script:
+    - hugo --minify
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+    - master

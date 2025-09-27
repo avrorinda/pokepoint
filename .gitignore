@@ -1,0 +1,32 @@
+# Hugo build output
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Hugo modules
+/.hugo_build.lock
+/go.sum
+/go.mod
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (если используете npm/yarn для кастомизации)
+node_modules/
+
+# VS Code и другие IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Backup files
+*~
+*.bak
+
+# User uploads (если есть)
+uploads/
