@@ -1,3 +1,5 @@
+baseURL = "https://pokepoint.ru/"
+
 copyright = "© PokePoint"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
