@@ -4,9 +4,22 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
       HUGO_ENV: production
@@ -35,10 +48,17 @@ jobs:
 
       - name: Build
         run: hugo --minify
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Add CNAME
+        run: echo "pokepoint.ru" > ./public/CNAME
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          cname: pokepoint.ru
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
