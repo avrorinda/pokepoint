@@ -5,8 +5,7 @@
 
 # Hugo modules
 /.hugo_build.lock
-/go.sum
-/go.mod
+# (ВАЖНО) Не игнорируем go.mod и go.sum — они нужны на CI
 
 # OS files
 .DS_Store

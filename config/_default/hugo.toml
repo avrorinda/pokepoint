@@ -48,6 +48,7 @@ title = "PokePoint"
     includeFields = "ImageDescription|Orientation"
 
 [module]
+  vendorDir = "_vendor"
   [module.hugoVersion]
     min = "0.121.2"
   [[module.imports]]
