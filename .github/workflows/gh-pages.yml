@@ -8,9 +8,21 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      HUGO_ENV: production
+      HUGO_MODULE_PROXY: https://proxy.golang.org
+      GOPROXY: https://proxy.golang.org,direct
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22.x'
+          cache: true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -18,11 +30,8 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Install Hugo modules
-        run: hugo mod get -u
-        env:
-          HUGO_MODULE_PROXY: 'https://proxy.golang.org'
-          HUGO_ENV: 'production'
+      - name: Tidy Hugo modules
+        run: hugo mod tidy
 
       - name: Build
         run: hugo --minify
