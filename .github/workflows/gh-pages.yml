@@ -20,6 +20,9 @@ jobs:
 
       - name: Install Hugo modules
         run: hugo mod get -u
+        env:
+          HUGO_MODULE_PROXY: 'https://proxy.golang.org'
+          HUGO_ENV: 'production'
 
       - name: Build
         run: hugo --minify
