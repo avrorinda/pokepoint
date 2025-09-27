@@ -1,3 +1,19 @@
+/* Прозрачный фон для figure с inline background-color */
+figure[style] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+/* Принудительно прозрачный фон даже для img с inline style */
+img.lazyloaded,
+img[style] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+/* Прозрачный фон для всех карточек и изображений */
+.card img, .gallery-item img, img {
+  background: transparent !important;
+  background-color: transparent !important;
+}
 /* High contrast colours
 :root {
   --surface-1-light: #fff;
