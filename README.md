@@ -9,3 +9,4 @@
 Локально:
 - dev-сервер: `hugo server -D`
 - сборка: `hugo --minify`
+
