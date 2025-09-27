@@ -18,6 +18,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Install Hugo modules
+        run: hugo mod get -u
+
       - name: Build
         run: hugo --minify
 
