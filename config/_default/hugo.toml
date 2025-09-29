@@ -1,6 +1,6 @@
 baseURL = "https://pokepoint.ru/"
 
-copyright = "© PokePoint"
+copyright = "Авторские права на буквальную и графическую информацию, представленную на этом веб-сайте о торговой карточной игре Pokémon, включая изображения карт и текст, принадлежат компании Pokémon Company (Покемон), Nintendo, Game Freak и/или Creatures. Этот веб-сайт не создан, не одобрен, не поддерживается и не связан с Pokémon, Nintendo, Game Freak или Creatures. Вся опубликованная информация носит рекомендательный характер, не является торговым предложением."
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
@@ -10,7 +10,7 @@ timeout = "120s"
 title = "PokePoint"
 
 [params]
-  defaultTheme = "light"
+  defaultTheme = "dark"
   description = "каталог рекомендованных цен"
   title = "ПокеПоинт"
   [params.author]
