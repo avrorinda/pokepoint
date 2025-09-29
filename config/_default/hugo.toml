@@ -7,7 +7,7 @@ enableRobotsTXT = true
 languageCode = "en"
 timeZone = "Europe/Moscow"
 timeout = "120s"
-title = "ПокеПоинт -"
+title = "content/logo.jpg"
 
 [params]
   defaultTheme = "dark"
