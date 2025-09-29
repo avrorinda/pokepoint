@@ -10,9 +10,9 @@ timeout = "120s"
 title = "PokePoint"
 
 [params]
-  defaultTheme = "dark"
-  description = "Витрина Покемонов"
-  title = "My PokePoint"
+  defaultTheme = "light"
+  description = "каталог рекомендованных цен"
+  title = "ПокеПоинт"
   [params.author]
     email = "user@example.com"
     name = "Your Name"
