@@ -1,9 +1,6 @@
 baseURL = "https://pokepoint.ru/"
 
-copyright = "Авторские права на буквальную и графическую информацию, представленную на этом веб-сайте о Pokémon TCG, включая изображения карт и текст,
-принадлежат компании Pokémon Company, Nintendo, Game Freak и/или Creatures.
-Этот веб-сайт не создан, не одобрен, не поддерживается и не связан с Pokémon, Nintendo, Game Freak или Creatures.
-Вся опубликованная информация носит рекомендательный характер и не является торговым предложением."
+copyright = ""
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
