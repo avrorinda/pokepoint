@@ -15,7 +15,7 @@ title = "ПокеПоинт"
 [params]
   defaultTheme = "dark"
   description = "Каталог рекомендованных цен"
-  title = ""
+  title = "ПокеПоинт"
   [params.author]
     email = "user@example.com"
     name = "Your Name"
