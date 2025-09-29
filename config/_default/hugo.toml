@@ -1,6 +1,6 @@
 baseURL = "https://pokepoint.ru/"
 
-copyright = ""
+copyright = "ПокеПоинт"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
@@ -11,8 +11,8 @@ title = "ПокеПоинт"
 
 [params]
   defaultTheme = "dark"
-  description = "Каталог рекомендованных цен"
-  title = "ПокеПоинт"
+  description = "Авторские права на буквальную и графическую информацию, представленную на этом веб-сайте о Pokémon TCG, включая изображения карт и текст, принадлежат компании Pokémon Company, Nintendo, Game Freak и/или Creatures. Этот веб-сайт не создан, не одобрен, не поддерживается и не связан с Pokémon, Nintendo, Game Freak или Creatures. Вся опубликованная информация носит рекомендательный характер, не является торговым предложением."
+  title = "Каталог рекомендованных цен"
   [params.author]
     email = "user@example.com"
     name = "Your Name"
