@@ -1,6 +1,6 @@
 ---
-description: Здесь описание.
-title: Покемоны всех стран, объединяйтесь!
+description: ежемесячных каталог рекомендованных цен
+title: ПокеПоинт
 resources:
   - src: martin-martz-wRuhOOaG-Z4-unsplash.jpg
     params:
