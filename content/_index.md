@@ -1,6 +1,6 @@
 ---
 description: ежемесячный каталог рекомендованных цен
-title: ПокеПоинт
+title:
 resources:
   - src: martin-martz-wRuhOOaG-Z4-unsplash.jpg
     params:
