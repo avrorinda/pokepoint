@@ -10,7 +10,7 @@ timeout = "120s"
 title = "content/logo.jpg"
 
 [params]
-  defaultTheme = "dark"
+  defaultTheme = "light"
   description = "Авторские права на буквальную и графическую информацию, представленную на этом веб-сайте о Pokémon TCG, включая изображения карт и текст, принадлежат компании Pokémon Company, Nintendo, Game Freak и/или Creatures. Этот веб-сайт не создан, не одобрен, не поддерживается и не связан с Pokémon, Nintendo, Game Freak или Creatures. Вся опубликованная информация носит рекомендательный характер, не является торговым предложением."
   title = "Каталог рекомендованных цен"
   [params.author]
